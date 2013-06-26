@@ -6,7 +6,7 @@ Will maybe be made generic in some way some day.
 It has two implementations depending on your need but you probably want this:
 
 ```go
-c := NewConcurrentCache()
+c := cache.NewConcurrentCache()
 ```
 
 This cache multiplexes the keys over 16 normal caches depending on the hash value of the key.
